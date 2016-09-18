@@ -21,9 +21,11 @@ class TestCoinChanger <Minitest::Test
 	def test_nickleback
 		coins = 5
 		assert_equal({:nickle => 1}, coinchanger(coins))
-		
+	end	
 
+	def test_stop_on_a_dime
+		coins = 10
+		assert_equal({:dime => 1}, coinchanger(coins))
+	end	
 
 end
-
-
