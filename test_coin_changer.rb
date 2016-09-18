@@ -28,4 +28,9 @@ class TestCoinChanger <Minitest::Test
 		assert_equal({:dime => 1}, coinchanger(coins))
 	end	
 
+	def test_11_without_7
+		coins = 11
+		assert_equal({:dime => 1, :penny => 1}, coinchanger(coins))
+	end	
+
 end
