@@ -14,8 +14,10 @@ def coinchanger(coins)
 
 	  	money.each do |coin, till|
 	  		if coins >= till
-	  			moolah[coin] = coins / till
+	  			moolah[coin] = coins / till  #coins received divided by the amount defined in the hash
 	  		end
+	  		coins = coins % till			# coins received divided by the amount defined in the hash with remainder
+	  										# need this for penny/nickle to work properly
 	  	end
 	  		
 	moolah
