@@ -33,4 +33,24 @@ class TestCoinChanger <Minitest::Test
 		assert_equal({:dime => 1, :penny => 1}, coinchanger(coins))
 	end	
 
+	def test_hey_19
+		coins = 19
+		assert_equal({:dime => 1, :penny => 4, :nickle => 1}, coinchanger(coins))
+	end	
+
+	def test_shave_and_a_haircut_2_bits
+		coins = 25
+		assert_equal({:quarter => 1}, coinchanger(coins))
+	end	
+
+	def test_1956
+		coins = 1956
+		assert_equal({:dollar => 19, :half_dollar => 1, :nickle => 1, :penny => 1}, coinchanger(coins))
+	end	
 end
+
+
+
+
+
+
