@@ -25,9 +25,9 @@ moolah
 end
 
 def change(results)
-	cheddah = ""
+	cheddah = " "
 	results.each do |coin, till|
-		cheddah << " " + value.to_s + "" + key.to_s + ","
+		cheddah << " , " + till.to_s + " " + coin.to_s + " "
 	end
 cheddah
 

@@ -19,6 +19,7 @@ post '/empty_pockets' do
 	yourname = params[:user_name]
 	cents = params[:cents]
 	moolah = coinchanger(cents.to_i)
-	
+	cheddah = change(moolah)
+	cheddah	
 		"Okay #{yourname}, you have #{cents} cents. I'll give you #{cheddah}.You should have enough to go to Kanawha State Forest."	
 end
