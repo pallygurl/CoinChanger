@@ -17,8 +17,27 @@ def coinchanger(coins)
 	  			moolah[coin] = coins / till  #coins received divided by the amount defined in the hash
 	  		end
 	  		coins = coins % till			# coins received divided by the amount defined in the hash with remainder
-	  										# need this for penny/nickle to work properly
+	  									# need this for penny/nickle to work properly
 	  	end
 	  		
-	moolah
+moolah
+ #moolah.each {|k,v| print "#{v}" + "#{k}"}
 end
+
+def change(results)
+	cheddah = ""
+	results.each do |coin, till|
+		cheddah << " " + value.to_s + "" + key.to_s + ","
+	end
+cheddah
+
+end		
+
+
+
+
+
+
+
+
+

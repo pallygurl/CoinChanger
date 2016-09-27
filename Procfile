@@ -1,0 +1,1 @@
+Procfile - web: bundle exec ruby coinchangerapp.rb
