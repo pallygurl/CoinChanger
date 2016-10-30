@@ -21,23 +21,25 @@ def coinchanger(coins)
 	  	end
 	  		
 moolah
- #moolah.each {|k,v| print "#{v}" + "#{k}"}
+ 
 end
 
 def change(results)
 	cheddah = " "
 	results.each do |coin, till|
-		cheddah << " , " + till.to_s + " " + coin.to_s + " "
+	coin = coin.to_s
+		 cents = cents.to_s
+		 if till > 1 && coin == "penny"
+			coin = "pennies"
+			# elsif amount == 1 && name == "penny"
+			# 	name = "penny"
+		elsif till > 1
+			coin = coin.to_s + "s"
+		else
+			coin
+		end
+		cheddah << " " + till.to_s + "  " + coin + ", "
 	end
-cheddah
+	cheddah
 
 end		
-
-
-
-
-
-
-
-
-

@@ -1,8 +1,15 @@
-Okay <%=yourname%>. How many cents do you have?
+<p class="text">Okay <%=yourname%>. How many cents do you have?</p>
+<br>
 
-<form method="post" action="empty_pockets">
-	<input type="number" name="cents" autofocus> cents
-	<input type= "text" name= "user_name" value= <%=yourname%> hidden>
-	<br>
+
+
+<form id = "input" method="post" action="empty_pockets">
+	<p class="text"> Cents: <input id = input-box type="number" name="cents" autofocus required>
+	<input type= "text" name= "user_name" hidden value= <%=yourname%>>
+	<br><br>
 	<input type ="submit"> 
 </form>
+
+<br><br>
+
+<p style="float:left;font-size:1rem;text-align:center;width:25%;margin-right:3%;margin-bottom:.5em;"><img src="img/dollie_glasses.jpg" style="width:80%;"></img></p>

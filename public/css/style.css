@@ -1,0 +1,87 @@
+/* style.css */
+
+body{
+	background-color:#d5e8e0;
+	font-family:Arial, Helvetica, san-serif;
+	text-align:center;
+}
+
+.text{
+	color: #03840e; font-weight: bold; text-align: left; padding-left: 5rem
+} 	
+
+.text1{
+	color: #03840e; padding-right: 125rem
+}
+	
+.input[type=button], input[type=submit]{
+	width: 10%;
+	padding: 1rem;
+	margin: 1rem 3rem;
+	background-color: #4CAF50;
+	border: none;
+	border-radius: 10%;
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+	font-size: 1rem;
+	float:left;	
+}
+
+.input-box{
+	width: 20%;
+	float: right;
+	text-align: left;
+}
+
+/*makes background color yellow */
+.hilite-font{
+	background-color:#f4bc42;
+}
+
+p.tip {
+	background-color:#ACD095;
+	margin-left:50%;
+	margin-right:30%;
+	padding:5px;
+	border:solid thin #167A58;
+	float:left;
+	font-size:1rem;
+}
+
+li{
+	display:inline; padding-right:1.0rem; font-size:.5rem; color: blue; font-weight: bold
+
+	} 
+ul{
+		text-align:right;	
+	}					
+
+.sizeimage{
+	height:15rem; width:15rem; 
+}
+
+footer{
+	position: absolute;
+	bottom: 0;
+	height: 40px;
+	left: 0;
+	right: 0;
+	background-color:#6cf;color:#ffffff; text-align:center;
+}
+
+ms-viewport{
+  width: device-width;
+}
+
+div {
+height: auto; /*if more info comes on the page, it will stretch down*/
+width: 1000px;
+margin: 0 auto; /*this will cause the div to be in the center*/
+}
+
+img{
+	max-width: 100;
+	height: auto;
+	margin:0 0 10px 0;
+}
